@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +41,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  background: rgba(75, 72, 72, 0.794);
+  height: 100vh;
+}
+
+.initialContainer {
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+
+h3 {
+  color: white;
+}
+
+button {
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  width: 200px;
+  height: 40px;
+  background: rgba(209, 208, 208, 0.794);
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(0.7);
 }
