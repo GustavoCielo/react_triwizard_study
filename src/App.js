@@ -10,7 +10,7 @@ export default class App extends Component {
   };
 
   componentDidMount() {
-    fetch("http://hp-api.herokuapp.com/api/characters/students")
+    fetch("https://hp-api.herokuapp.com/api/characters/students")
       .then((res) => res.json())
       .then((res) => this.setState({ characters: res }))
       .catch((err) => console.log("erro", err));
