@@ -39,8 +39,11 @@ export default class App extends Component {
         <main>
           {isShowing ? (
             <>
-              <Card list={showCharacters} />
+              <div className="mainContainer">
+                <Card list={showCharacters} />
+              </div>
               <button
+                className="absolutePositioned"
                 onClick={() =>
                   this.setState({
                     showCharacters: [],
